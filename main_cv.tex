@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{resume} % Use the custom resume.cls style 
+\usepackage[dvipsnames]{xcolor}
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Zhengrong Liu} % Your name 
+\address{+86 15181359504 \\ lzr031922@gmail.com} % Your phone number and email
+
+\definecolor{TsinghuaPurple}{cmyk}{0.58,0.90,0,0}
+\renewenvironment{rSection}[1]{
+\sectionskip
+\textcolor{TsinghuaPurple}{\MakeUppercase{#1}}
+\sectionlineskip
+\hrule
+\begin{list}{}{
+%\setlength{\leftmargin}{1.5em}
+\setlength{\leftmargin}{0em}
+}
+\item[]
+}{
+\end{list}
+}
+
+
+\begin{document}  
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education \& Experience}
+
+{\bf Startorus Fusion} \hfill \textit{Jul. 2024 - Present}
+\\
+Algorithm Engineer \& Project Manager, Department of Plasma Control
+\\ $\circ$ Research: Multi-configuration equilibrium reconstruction; Control algorithm development; Magnetic control experiments
+\\ $\circ$ Management: Device design; Control algorithm development; Plasma control system development
+
+{\bf Tsinghua University} \hfill {\bf GPA: 3.70/4.00}
+\\ 
+{Major: Nuclear Science and Technology} (Numerical simulation of MCF plasma)  \hfill \textit{Sept. 2021 - Jun. 2024}
+\\
+Thesis: Numerical Study of Local Parametric Decay Instability by Lower Hybrid Waves  
+\\ $\circ$ Core Courses: High Temperature Plasma Physics, Principles of High Temperature Plasma Diagnostics
+
+{\bf Sichuan University} \hfill  {\bf GPA: 3.75/4.00}
+\\ 
+{Major: Nuclear Engineering and Technology} \hfill \textit{Sept. 2017 - Jun. 2021}
+\\
+Thesis: Effect of Bootstrap Current on Particles’ Trajectories in Tokamak
+\\ $\circ$ Core Courses: Electromagnetism and Electrodynamics, Atomic Physics and Quantum Physics, Computational Physics, Methods of Mathematical Physics, Nuclear Electronics(including experiment), Radiation Detection and Measurement(including experiment), Plasma Physics, Basic Fusion Physics
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{RESEARCH INTERESTS}
+
+Real-time control of plasma shape and kinetic profiles in tokamaks, bridging theory and experiment through an automated closed-loop design--experiment--analysis--optimization platform.
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	PROJECTS
+
+\begin{rSection}{RESEARCH Experience}
+
+\begin{rSubsection}{Equilibrium Reconstruction Algorithm and Magnetic Control of Plasma Shape on the Spherical Tokamak SUNIST-2}{Jul. 2024 - Present}{Department of Plasma Control, Startorus Fusion}{}
+
+\item Developed the equilibrium reconstruction algorithm for doublet / droplet plasma configurations
+\item Developed the first real-time equilibrium reconstruction algorithm over a $33 \times 65$ grid with 118 magnetic diagnostics, achieving $\sim$200 $\mu$s per reconstruction cycle
+\item Realized preliminary magnetic control of plasma shape based on the reconstructed equilibrium
+\item Contributed to device design and led control-algorithm development within the plasma control team, coordinating the workflow from modeling to real-time implementation
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Numerical Study of Local Parametric Decay Instability by Lower Hybrid Waves}{Sept. 2021 - Jun. 2024}{Department of Engineering Physics, Tsinghua University}{}
+
+\item Conducted numerical simulation of magnetically confined fusion (MCF) plasma to study local parametric decay instability (PDI) excited by lower hybrid waves
+\item Investigated wave heating and current drive mechanisms relevant to tokamak plasma
+\item Implemented the numerical models and data analysis in Matlab / Python
+
+\end{rSubsection}
+
+%-------------------------------------------------
+
+\begin{rSubsection}{Effect of Bootstrap Current on Particles' Trajectories in Tokamak}{Sept. 2020 - Jun. 2021}{College of Physics, Sichuan University}{}
+
+\item Analyzed the influence of bootstrap current on charged-particle orbits in a tokamak magnetic configuration
+\item Performed numerical computation of particle trajectories under equilibrium magnetic fields
+
+\end{rSubsection}
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------------
+%   Research Publications 
+%--------------------------------------------------------------------------------------
+\begin{rSection}{Research Publications} \itemsep -3pt
+
+{\textbf{Z.R. Liu}, Z.C. Song, Z.B. Cheng, et al., ``\textit{The First Real-Time Equilibrium Reconstruction Algorithm and Preliminary Magnetic Control of Plasma Shape on the Spherical Tokamak SUNIST-2}'', Plasma Physics and Controlled Fusion (\textit{to be submitted before Aug. 15, 2026})} \\[4pt]
+
+{Z.C. Song, \textbf{Z.R. Liu}, Z.B. Cheng, et al., ``\textit{Preliminary progress of magnetic plasma control for the SUNIST-2 spherical tokamak}'', Plasma Physics and Controlled Fusion \textbf{67}, 115002} \hfill 2025 \\[4pt]
+
+{Z. Gao, Z.H. Su, \textbf{Z.R. Liu}, Z.K. Huang, J.Y. Han, Z.Y. Liu, ``\textit{Kinetic theory of parametric instabilities in magnetized plasmas and its application to analyzing decay waves during the injection of lower hybrid waves}'', Nuclear Fusion \textbf{65}, 046033} \hfill 2025 \\[4pt]
+
+{T.Z. Chang, Z.C. Lei, M.H. Yang, Y.H. Luo, Z.B. Cheng, Z.C. Song, \textbf{Z.R. Liu}, J.R. Wang, B.B. Wang, R. Chen, Y. Tan, ``\textit{First results of lithium coating experiments in the SUNIST-2 spherical tokamak}'', Plasma Physics and Controlled Fusion \textbf{67}, 075023} \hfill 2025 \\
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------------
+%   Skills
+%--------------------------------------------------------------------------------------
+\begin{rSection}{Skills}
+
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Matlab, Python\\
+\end{tabular}
+\end{rSection}
+
+%---------------------------------------------------------------------------------
+%  DECLARATION
+%--------------------------------------------------------------------------------
+
+%\begin{rSection}{ Declaration  } \itemsep -3pt        
+
+%\item I hereby declare that all the details furnished above are true to the %best of my knowledge and belief.   
+  
+%\end{rSection}
+\end{document}
